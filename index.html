@@ -1,97 +1,395 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml">
+
+
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<title>TestNG Report</title>
-<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
-</head>
-<body>
-<table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Cross-Platform</th></tr>
-<tr><td><a href="#t0">IOSBasicsTest</a></td><td class="num">33</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">6,124,233</td><td></td><td></td></tr>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>iOS Test Automation Report </title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">iOS Test Automation Report </span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 22, 2024 04:42:00 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verify_Customer_Creation</p>
+            <p class="text-sm">
+              <span>4:42:23 PM</span> / <span>00:01:55:300</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verify_Customer_Creation</h5>
+<span class='badge badge-success'>07.22.2024 4:42:23 PM</span>
+<span class='badge badge-danger'>07.22.2024 4:44:18 PM</span>
+<span class='badge badge-default'>00:01:55:300</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:42:35 PM</td>
+        <td>
+          Clicked on Platform User Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:42:51 PM</td>
+        <td>
+          Swiped Customer Left
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:44:18 PM</td>
+        <td>
+          <span class='badge white-text green'>verify_Customer_Creation Test Case PASSED</span>
+        </td>
+      </tr>
+  </tbody>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Cross-Platform</th></tr></tbody><tbody id="t0"><tr><th colspan="4">IOSBasicsTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.test.ios.OrderView</td><td><a href="#m0">Refund_The_Whole_Order</a></td><td rowspan="1">1721018875640</td><td rowspan="1">194142</td></tr><tr class="failedeven"><td><a href="#m1">verify_Credit_Order</a></td><td rowspan="1">1721017225247</td><td rowspan="1">255344</td></tr><tr class="failedodd"><td rowspan="1">com.test.ios.ProductView</td><td><a href="#m2">productView_Percentage_Discount_NegativeScenario</a></td><td rowspan="1">1721020172043</td><td rowspan="1">188667</td></tr><tr><th colspan="4">IOSBasicsTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="19">com.test.ios.OrderView</td><td><a href="#m3">Add_More_Product_In_Partial_Paid_Order</a></td><td rowspan="1">1721017943589</td><td rowspan="1">105541</td></tr><tr class="passedeven"><td><a href="#m4">Verify_2Products_2Percentage_Discount_Claculations</a></td><td rowspan="1">1721016071800</td><td rowspan="1">193996</td></tr><tr class="passedeven"><td><a href="#m5">Verify_Adding_User_With_Switch</a></td><td rowspan="1">1721018654886</td><td rowspan="1">34470</td></tr><tr class="passedeven"><td><a href="#m6">Verify_Calculations_Of_1Percent_Discount</a></td><td rowspan="1">1721016288712</td><td rowspan="1">186890</td></tr><tr class="passedeven"><td><a href="#m7">Verify_Credit_Order_Amount_Is_Negative</a></td><td rowspan="1">1721016498463</td><td rowspan="1">109213</td></tr><tr class="passedeven"><td><a href="#m8">Verify_Full_Paid_Oder_Confirmation_Screen_Value_Amount</a></td><td rowspan="1">1721019092604</td><td rowspan="1">69906</td></tr><tr class="passedeven"><td><a href="#m9">Verify_Order_Kind_List</a></td><td rowspan="1">1721016630645</td><td rowspan="1">71987</td></tr><tr class="passedeven"><td><a href="#m10">Verify_Order__SubTotal</a></td><td rowspan="1">1721016725499</td><td rowspan="1">115285</td></tr><tr class="passedeven"><td><a href="#m11">Verify_Order__Total</a></td><td rowspan="1">1721016863647</td><td rowspan="1">106810</td></tr><tr class="passedeven"><td><a href="#m12">Verify_Product_Removal_From_Partial_Order</a></td><td rowspan="1">1721018072000</td><td rowspan="1">69079</td></tr><tr class="passedeven"><td><a href="#m13">Verify_Side_Panel_Menu_Working</a></td><td rowspan="1">1721016993336</td><td rowspan="1">17295</td></tr><tr class="passedeven"><td><a href="#m14">Verify_Total_Order_Discount_In_3_Products</a></td><td rowspan="1">1721017033476</td><td rowspan="1">168891</td></tr><tr class="passedeven"><td><a href="#m15">verify_Customer_Creation</a></td><td rowspan="1">1721017503481</td><td rowspan="1">112450</td></tr><tr class="passedeven"><td><a href="#m16">verify_Order_Changed_To_Credit_And_Sale</a></td><td rowspan="1">1721017638852</td><td rowspan="1">107161</td></tr><tr class="passedeven"><td><a href="#m17">verify_Partial_Cash_Payment</a></td><td rowspan="1">1721017768925</td><td rowspan="1">151822</td></tr><tr class="passedeven"><td><a href="#m18">verify_Payment_1Product_1Qty_LocalTax_Cash_Payment</a></td><td rowspan="1">1721018712192</td><td rowspan="1">140134</td></tr><tr class="passedeven"><td><a href="#m19">verify_Payment_1Product_1Qty_LocalTax_Cheque_Payment</a></td><td rowspan="1">1721018163959</td><td rowspan="1">131953</td></tr><tr class="passedeven"><td><a href="#m20">verify_Payment_2Product_1Qty_LocalTax_Cash_Payment</a></td><td rowspan="1">1721018318908</td><td rowspan="1">145657</td></tr><tr class="passedeven"><td><a href="#m21">verify_Percentage_Discount</a></td><td rowspan="1">1721018487621</td><td rowspan="1">144363</td></tr><tr class="passedodd"><td rowspan="14">com.test.ios.ProductView</td><td><a href="#m22">productView_Exchange_Order_Refund_Not_Applicable</a></td><td rowspan="1">1721019185384</td><td rowspan="1">174387</td></tr><tr class="passedodd"><td><a href="#m23">productView_Full_Order_Refund</a></td><td rowspan="1">1721019382633</td><td rowspan="1">167689</td></tr><tr class="passedodd"><td><a href="#m24">productView_Order_Total_By_Order_Refund</a></td><td rowspan="1">1721019573220</td><td rowspan="1">166463</td></tr><tr class="passedodd"><td><a href="#m25">productView_Partial_Payment_Cash</a></td><td rowspan="1">1721019762518</td><td rowspan="1">178283</td></tr><tr class="passedodd"><td><a href="#m26">productView_Percentage_Discount</a></td><td rowspan="1">1721019964018</td><td rowspan="1">185087</td></tr><tr class="passedodd"><td><a href="#m27">productView_Verify_Credit_Order_Calculations</a></td><td rowspan="1">1721020384080</td><td rowspan="1">164731</td></tr><tr class="passedodd"><td><a href="#m28">productView_Verify_Full_Paid_Oder_Confirmation_Screen_Value_Amount</a></td><td rowspan="1">1721020572426</td><td rowspan="1">168124</td></tr><tr class="passedodd"><td><a href="#m29">productView_Verify_Price_Calculations_In_Order_Summary</a></td><td rowspan="1">1721020763458</td><td rowspan="1">172712</td></tr><tr class="passedodd"><td><a href="#m30">productView_Verify_Total_In_Existing_Order_List</a></td><td rowspan="1">1721020959012</td><td rowspan="1">183660</td></tr><tr class="passedodd"><td><a href="#m31">productView_Verify_Total_Single_Qty_Refund</a></td><td rowspan="1">1721021165612</td><td rowspan="1">179076</td></tr><tr class="passedodd"><td><a href="#m32">productView_Verify_Transaction_Refund</a></td><td rowspan="1">1721021367579</td><td rowspan="1">174920</td></tr><tr class="passedodd"><td><a href="#m33">productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment</a></td><td rowspan="1">1721021565395</td><td rowspan="1">175322</td></tr><tr class="passedodd"><td><a href="#m34">productViewverify_Payment_1Product_1Qty_LocalTax_Cheque_Payment</a></td><td rowspan="1">1721021763620</td><td rowspan="1">162322</td></tr><tr class="passedodd"><td><a href="#m35">verify_Payment_1Product_2Qty_LocalTax_Cash_Payment</a></td><td rowspan="1">1721021949553</td><td rowspan="1">206062</td></tr></tbody>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment</p>
+            <p class="text-sm">
+              <span>4:44:42 PM</span> / <span>00:02:20:419</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment</h5>
+<span class='badge badge-success'>07.22.2024 4:44:42 PM</span>
+<span class='badge badge-danger'>07.22.2024 4:47:02 PM</span>
+<span class='badge badge-default'>00:02:20:419</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='/Users/prakul/Documents/epos workspace/AppiumIos/Screenshots/productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment20240722044702.png' src="/Users/prakul/Documents/epos workspace/AppiumIos/Screenshots/productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment20240722044702.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:44:56 PM</td>
+        <td>
+          Clicked on Platform User Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:45:04 PM</td>
+        <td>
+          Clicked on Look up a Customer
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:45:14 PM</td>
+        <td>
+          Swiped Customer Left
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:45:27 PM</td>
+        <td>
+          Clicked on Create New Order Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:45:47 PM</td>
+        <td>
+          Switched to Order View
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:45:53 PM</td>
+        <td>
+          Switched to Product View
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:46:01 PM</td>
+        <td>
+          Typed in Product Name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:46:31 PM</td>
+        <td>
+          Clicked on Arrow Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:47:02 PM</td>
+        <td>
+          <span class='badge white-text red'>productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment - Test Case Failed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:47:02 PM</td>
+        <td>
+          Test Case Failed Snapshot is below com.aventstack.extentreports.ExtentTest@6866e740
+        </td>
+      </tr>
+  </tbody>
 </table>
-<h2>IOSBasicsTest</h2><h3 id="m0">com.test.ios.OrderView#Refund_The_Whole_Order</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.iOSClassChain: **/XCUIElementTypeStaticText[`label == &apos;Make payment&apos;`] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2&apos;, java.version: &apos;11.0.17&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {appium:absoluteWebLocations: true, appium:autoAcceptAlerts: true, appium:autoDismissAlerts: true, appium:autoGrantPermissions: true, appium:automationName: XCUITest, appium:bundleId: com.connectedepos.epos, appium:databaseEnabled: false, appium:deviceName: iPad Pro (11-inch) (3rd gen..., appium:geoLocation: GB, appium:javascriptEnabled: true, appium:locale: en_US, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.3.1 , appium:shouldTerminateApp: true, appium:takesScreenshot: true, appium:udid: 00008103-001175A226E0801E, appium:webStorageEnabled: false, appium:xcodeOrgId: com.connectedepos.epos, appium:xcodeSigningId: iPhone Developer, platformName: IOS}
-Session ID: 6676f865-1db1-4cd9-9597-b6fa422b1b7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.test.ios.BaseIosTest.waitForElementToBeClickable(BaseIosTest.java:459)
-	at com.test.ios.OrderView.Refund_The_Whole_Order(OrderView.java:1004)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.test.ios.OrderView#verify_Credit_Order</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //XCUIElementTypeButton[@name=&apos;Refund&apos;] (tried for 120 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2&apos;, java.version: &apos;11.0.17&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {appium:absoluteWebLocations: true, appium:autoAcceptAlerts: true, appium:autoDismissAlerts: true, appium:autoGrantPermissions: true, appium:automationName: XCUITest, appium:bundleId: com.connectedepos.epos, appium:databaseEnabled: false, appium:deviceName: iPad Pro (11-inch) (3rd gen..., appium:geoLocation: GB, appium:javascriptEnabled: true, appium:locale: en_US, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.3.1 , appium:shouldTerminateApp: true, appium:takesScreenshot: true, appium:udid: 00008103-001175A226E0801E, appium:webStorageEnabled: false, appium:xcodeOrgId: com.connectedepos.epos, appium:xcodeSigningId: iPhone Developer, platformName: IOS}
-Session ID: 52c41cde-0a77-4646-97c5-7b8a4c0e425c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.test.ios.BaseIosTest.waitForElementToBeClickable(BaseIosTest.java:459)
-	at com.test.ios.OrderView.verify_Credit_Order(OrderView.java:459)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.test.ios.ProductView#productView_Percentage_Discount_NegativeScenario</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;13.2&apos;, java.version: &apos;11.0.17&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Command: [a351c268-dd07-4e20-8ad5-5f7b543680eb, findElement {using=xpath, value=//XCUIElementTypeButton[@name=‘iconUser’]//preceding::XCUIElementTypeButton[1]}]
-Capabilities {appium:absoluteWebLocations: true, appium:autoAcceptAlerts: true, appium:autoDismissAlerts: true, appium:autoGrantPermissions: true, appium:automationName: XCUITest, appium:bundleId: com.connectedepos.epos, appium:databaseEnabled: false, appium:deviceName: iPad Pro (11-inch) (3rd gen..., appium:geoLocation: GB, appium:javascriptEnabled: true, appium:locale: en_US, appium:locationContextEnabled: false, appium:networkConnectionEnabled: false, appium:platformVersion: 16.3.1 , appium:shouldTerminateApp: true, appium:takesScreenshot: true, appium:udid: 00008103-001175A226E0801E, appium:webStorageEnabled: false, appium:xcodeOrgId: com.connectedepos.epos, appium:xcodeSigningId: iPhone Developer, platformName: IOS}
-Session ID: a351c268-dd07-4e20-8ad5-5f7b543680eb
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at com.test.ios.BaseIosTest.retryingFindClick(BaseIosTest.java:346)
-	at com.test.ios.BaseIosTest.click(BaseIosTest.java:367)
-	at com.test.ios.ProductView.productView_Percentage_Discount_NegativeScenario(ProductView.java:496)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.test.ios.OrderView#Add_More_Product_In_Partial_Paid_Order</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.test.ios.OrderView#Verify_2Products_2Percentage_Discount_Claculations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.test.ios.OrderView#Verify_Adding_User_With_Switch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.test.ios.OrderView#Verify_Calculations_Of_1Percent_Discount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.test.ios.OrderView#Verify_Credit_Order_Amount_Is_Negative</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.test.ios.OrderView#Verify_Full_Paid_Oder_Confirmation_Screen_Value_Amount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.test.ios.OrderView#Verify_Order_Kind_List</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.test.ios.OrderView#Verify_Order__SubTotal</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.test.ios.OrderView#Verify_Order__Total</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">com.test.ios.OrderView#Verify_Product_Removal_From_Partial_Order</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">com.test.ios.OrderView#Verify_Side_Panel_Menu_Working</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">com.test.ios.OrderView#Verify_Total_Order_Discount_In_3_Products</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">com.test.ios.OrderView#verify_Customer_Creation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">com.test.ios.OrderView#verify_Order_Changed_To_Credit_And_Sale</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m17">com.test.ios.OrderView#verify_Partial_Cash_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m18">com.test.ios.OrderView#verify_Payment_1Product_1Qty_LocalTax_Cash_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m19">com.test.ios.OrderView#verify_Payment_1Product_1Qty_LocalTax_Cheque_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m20">com.test.ios.OrderView#verify_Payment_2Product_1Qty_LocalTax_Cash_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m21">com.test.ios.OrderView#verify_Percentage_Discount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m22">com.test.ios.ProductView#productView_Exchange_Order_Refund_Not_Applicable</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m23">com.test.ios.ProductView#productView_Full_Order_Refund</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m24">com.test.ios.ProductView#productView_Order_Total_By_Order_Refund</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m25">com.test.ios.ProductView#productView_Partial_Payment_Cash</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m26">com.test.ios.ProductView#productView_Percentage_Discount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m27">com.test.ios.ProductView#productView_Verify_Credit_Order_Calculations</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m28">com.test.ios.ProductView#productView_Verify_Full_Paid_Oder_Confirmation_Screen_Value_Amount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m29">com.test.ios.ProductView#productView_Verify_Price_Calculations_In_Order_Summary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m30">com.test.ios.ProductView#productView_Verify_Total_In_Existing_Order_List</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m31">com.test.ios.ProductView#productView_Verify_Total_Single_Qty_Refund</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m32">com.test.ios.ProductView#productView_Verify_Transaction_Refund</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m33">com.test.ios.ProductView#productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m34">com.test.ios.ProductView#productViewverify_Payment_1Product_1Qty_LocalTax_Cheque_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m35">com.test.ios.ProductView#verify_Payment_1Product_2Qty_LocalTax_Cash_Payment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-</body>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 22, 2024 04:42:00 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 22, 2024 04:47:03 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='7%'><b>1</b> events passed</small></div>
+<div>
+<small data-tooltip='15%'><b>2</b> events failed,
+<b data-tooltip='%'>10</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"verify_Customer_Creation":115.3,"productView_verify_Payment_1Product_1Qty_LocalTax_Cash_Payment":140.419
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Host Name</td>
+<td>iOS Automation</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>Pranav</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 1,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 10
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
 </html>
